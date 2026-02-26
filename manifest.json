@@ -1,15 +1,18 @@
 {
-  "name": "PresuRE v1.3",
-  "short_name": "PresuRE",
+  "name": "PresuRE v2.1",
+  "short_name": "PresuRE v2.1",
   "lang": "es",
-  "start_url": "./index.html",
-  "scope": "./",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#edf2f7",
   "theme_color": "#1a365d",
-  "orientation": "any",
+  
   "description": "Calculadora de presupuestos rápida y eficiente",
-  "categories": ["productivity", "utilities"],
+  "categories": [
+    "productivity",
+    "utilities"
+  ],
   "icons": [
     {
       "src": "icon-192.png",
@@ -34,6 +37,16 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  
+  "file_handlers": [
+    {
+      "action": "/",
+      "accept": {
+        "application/vnd.presure.sure": [".sure"],
+        "application/vnd.presure.surb": [".surb"]
+      }
     }
   ]
 }
